@@ -46,7 +46,7 @@ for Unicode engines.
 %install
 mkdir -p %{buildroot}%{_texmf_language_dat_d}
 cat > %{buildroot}%{_texmf_language_dat_d}/hyphen-indic <<EOF
-%% from hyphen-indic:
+\%\% from hyphen-indic:
 assamese loadhyph-as.tex
 bengali loadhyph-bn.tex
 gujarati loadhyph-gu.tex
@@ -61,7 +61,7 @@ telugu loadhyph-te.tex
 EOF
 mkdir -p %{buildroot}%{_texmf_language_def_d}
 cat > %{buildroot}%{_texmf_language_def_d}/hyphen-indic <<EOF
-%% from hyphen-indic:
+\%\% from hyphen-indic:
 \addlanguage{assamese}{loadhyph-as.tex}{}{1}{1}
 \addlanguage{bengali}{loadhyph-bn.tex}{}{1}{1}
 \addlanguage{gujarati}{loadhyph-gu.tex}{}{1}{1}
