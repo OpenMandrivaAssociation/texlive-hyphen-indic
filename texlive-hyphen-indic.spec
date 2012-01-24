@@ -5,8 +5,8 @@
 # catalog-license undef
 # catalog-version undef
 Name:		texlive-hyphen-indic
-Version:	20111103
-Release:	2
+Version:	20120124
+Release:	1
 Summary:	Indic hyphenation patterns
 Group:		Publishing
 URL:		http://tug.org/texlive
@@ -46,7 +46,7 @@ for Unicode engines.
 %install
 mkdir -p %{buildroot}%{_texmf_language_dat_d}
 cat > %{buildroot}%{_texmf_language_dat_d}/hyphen-indic <<EOF
-\%\% from hyphen-indic:
+\%% from hyphen-indic:
 assamese loadhyph-as.tex
 bengali loadhyph-bn.tex
 gujarati loadhyph-gu.tex
@@ -59,9 +59,10 @@ panjabi loadhyph-pa.tex
 tamil loadhyph-ta.tex
 telugu loadhyph-te.tex
 EOF
+perl -pi -e 's|\\%%|%%|;' %{buildroot}%{_texmf_language_dat_d}/hyphen-indic
 mkdir -p %{buildroot}%{_texmf_language_def_d}
 cat > %{buildroot}%{_texmf_language_def_d}/hyphen-indic <<EOF
-\%\% from hyphen-indic:
+\%% from hyphen-indic:
 \addlanguage{assamese}{loadhyph-as.tex}{}{1}{1}
 \addlanguage{bengali}{loadhyph-bn.tex}{}{1}{1}
 \addlanguage{gujarati}{loadhyph-gu.tex}{}{1}{1}
@@ -74,6 +75,7 @@ cat > %{buildroot}%{_texmf_language_def_d}/hyphen-indic <<EOF
 \addlanguage{tamil}{loadhyph-ta.tex}{}{1}{1}
 \addlanguage{telugu}{loadhyph-te.tex}{}{1}{1}
 EOF
+perl -pi -e 's|\\%%|%%|;' %{buildroot}%{_texmf_language_def_d}/hyphen-indic
 mkdir -p %{buildroot}%{_texmf_language_lua_d}
 cat > %{buildroot}%{_texmf_language_lua_d}/hyphen-indic <<EOF
 -- from hyphen-indic:
