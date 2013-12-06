@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-hyphen-indic
 Version:	20120611
-Release:	2
+Release:	3
 Summary:	Indic hyphenation patterns
 Group:		Publishing
 URL:		http://tug.org/texlive
