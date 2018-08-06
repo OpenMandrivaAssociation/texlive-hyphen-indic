@@ -5,7 +5,7 @@
 # catalog-license undef
 # catalog-version undef
 Name:		texlive-hyphen-indic
-Version:	20180303
+Version:	20180729
 Release:	1
 Summary:	Indic hyphenation patterns
 Group:		Publishing
