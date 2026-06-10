@@ -1,6 +1,6 @@
 Name:		texlive-hyphen-indic
 Version:	73410
-Release:	1
+Release:	2
 Summary:	Indic hyphenation patterns
 Group:		Publishing
 URL:		https://tug.org/texlive
